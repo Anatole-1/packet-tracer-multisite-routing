@@ -66,7 +66,7 @@ graph TB
 
 Le routage est hiérarchique :
 
-1. **Routeurs d'accès** (R3, R4, R8 à R12) : une route par défaut vers le routeur de bordure de leur site.
+1. **Routeurs d'accès** (R3, R4, R8 à R12) : une route par défaut vers le routeur de bordure de leur site (R5 pour le site 1, R6 pour le site 2, R7 pour le site 3).
 2. **Routeurs de bordure** (R6, R7) : des routes statiques vers chaque LAN de leur site, plus une route par défaut vers R5.
 3. **Routeur central** (R5) : une route vers chaque site, résumée en /16 pour les sites 2 et 3.
 
@@ -81,7 +81,7 @@ ip route 159.76.0.0    255.255.0.0     14.0.0.3
 ip route 0.0.0.0       0.0.0.0         14.0.0.1
 ip route 159.76.0.8    255.255.255.248 159.76.0.2
 ip route 159.76.0.16   255.255.255.248 159.76.0.4
-ip route 159.76.0.24   255.255.255.248 159.76.0.3
+ip route 159.76.0.24   255.255.255.252 159.76.0.3
 ```
 
 Toutes les configurations sont regroupées dans [`CONFIGURATIONS.md`](CONFIGURATIONS.md).
@@ -95,7 +95,7 @@ Toutes les configurations sont regroupées dans [`CONFIGURATIONS.md`](CONFIGURAT
 
 ## Utilisation
 
-Ouvrir [`projet-reseaux-avances.pkt`](projet-reseaux-avances.pkt) avec **Cisco Packet Tracer 8.2** ou plus récent, puis tester par exemple un `tracert 159.76.0.10` depuis PC1.1. Testé sous Packet Tracer 9.0 : les trois sites communiquent entre eux. Comme l'indique la note du schéma, les premiers pings peuvent échouer le temps de la convergence (résolution ARP).
+Ouvrir [`projet-reseaux-avances.pkt`](projet-reseaux-avances.pkt) avec **Cisco Packet Tracer 8.2** ou plus récent, puis tester par exemple un `tracert 159.76.0.10` depuis PC1.1. Testé sous Packet Tracer 9.0 : les trois sites communiquent entre eux, PC3.9 compris. Comme l'indique la note du schéma, les premiers pings peuvent échouer le temps de la convergence (résolution ARP).
 
 ## Contenu du dossier
 
