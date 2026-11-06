@@ -1,4 +1,4 @@
-# Configurations – Projet réseaux avancés
+# Configurations – Interconnexion multi-sites par routage statique
 
 Configuration complète de chaque équipement, exportée depuis le fichier Packet Tracer.
 Les mots de passe et numéros de série sont masqués ; les interfaces sans configuration sont omises.

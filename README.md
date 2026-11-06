@@ -1,6 +1,6 @@
-# Interconnexion multi-sites par routage statique – Projet réseaux avancés
+# Interconnexion multi-sites par routage statique – Cisco Packet Tracer
 
-Projet réalisé à l'ESAIP (IR3) : interconnexion de trois sites, chacun avec son propre bloc d'adresses découpé en sous-réseaux, autour d'un réseau dorsal commun. Le routage repose entièrement sur des **routes statiques** et des **routes par défaut** hiérarchiques.
+Interconnexion de trois sites, chacun avec son propre bloc d'adresses découpé en sous-réseaux, autour d'un réseau dorsal commun. Le routage repose entièrement sur des **routes statiques** et des **routes par défaut** hiérarchiques.
 
 ![Packet Tracer](https://img.shields.io/badge/Cisco-Packet%20Tracer%208.2-1BA0D7?logo=cisco&logoColor=white)
 ![Routing](https://img.shields.io/badge/Routage-statique-informational)
@@ -105,7 +105,3 @@ Ouvrir [`projet-reseaux-avances.pkt`](projet-reseaux-avances.pkt) avec **Cisco P
 | [`CONFIGURATIONS.md`](CONFIGURATIONS.md) | Configuration de chaque équipement et adressage des postes, en un seul fichier |
 | [`configs/`](configs/) | Une configuration brute par équipement (`.txt`) |
 | [`images/`](images/) | Captures de la topologie |
-
-## Auteur
-
-**Anatole BERNARD** – étudiant ingénieur à l'ESAIP
